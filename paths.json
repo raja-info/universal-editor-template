@@ -1,10 +1,10 @@
 {
   "mappings": [
-    "/content/aem-boilerplate/:/",
-    "/content/aem-boilerplate/configuration:/.helix/config.json",
-    "/content/aem-boilerplate/metadata:/metadata.json"
+    "/content/raja-universal-editor-template/:/",
+    "/content/raja-universal-editor-template/configuration:/.helix/config.json",
+    "/content/raja-universal-editor-template/metadata:/metadata.json"
   ],
   "includes": [
-    "/content/aem-boilerplate/"
+    "/content/raja-universal-editor-template/"
   ]
 }
