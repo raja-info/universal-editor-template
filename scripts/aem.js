@@ -403,6 +403,24 @@ function wrapTextNodes(block) {
 }
 
 /**
+ * Returns a set of UI placeholders/labels used across components.
+ * Kept minimal and async to match existing call-sites which use await.
+ * Components can override these by providing their own logic later.
+ * @returns {Promise<object>} placeholders
+ */
+async function fetchPlaceholders() {
+  // Minimal set of placeholders used by blocks in this template.
+  return {
+    carousel: 'Carousel',
+    carouselSlideControls: 'Carousel Slide Controls',
+    previousSlide: 'Previous Slide',
+    nextSlide: 'Next Slide',
+    showSlide: 'Show Slide',
+    of: 'of',
+  };
+}
+
+/**
  * Decorates paragraphs containing a single link as buttons.
  * @param {Element} element container element
  */
@@ -713,4 +731,5 @@ export {
   toClassName,
   waitForFirstImage,
   wrapTextNodes,
+  fetchPlaceholders,
 };
